@@ -4,7 +4,7 @@ on:
   push:
     branches: [dev, main]
   pull_request:
-    branches: ["**"]
+    branches: ['**']
     types: [opened, reopened, synchronize, ready_for_review]
 
 jobs:

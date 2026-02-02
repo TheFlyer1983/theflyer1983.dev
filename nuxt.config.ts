@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     routeRules: {
       '/**': {
         headers: {
-          'Cache-Control': `public, max-age=${604800}, s-maxage=${604800}`
+          'Cache-Control': `public, max-age=${604800}, s-maxage=${604800}`,
+          'Netlify-CDN-Cache-Control': `public, max-age=${604800}, s-maxage=${604800}`
         }
       }
     }

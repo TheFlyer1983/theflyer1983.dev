@@ -11,5 +11,16 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()]
+  },
+
+  nitro: {
+    preset: 'netlify',
+    routeRules: {
+      '/**': {
+        headers: {
+          'Cache-Control': `public, max-age=${604800}, s-maxage=${604800}`
+        }
+      }
+    }
   }
 });

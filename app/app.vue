@@ -13,9 +13,17 @@ if (import.meta.server) {
 </script>
 <template>
   <UApp>
-    <div class="flex flex-col h-dvh items-center justify-center">
+    <div class="flex h-dvh flex-col items-center justify-center">
       <NuxtLink to="/">Welcome to theflyer1983.dev</NuxtLink>
-      <span>The personal website of Paul Livingstone (also known as <NuxtLink to="https://github.com/theflyer1983" external class="underline">TheFlyer1983</NuxtLink>)</span>
+      <span
+        >The personal website of Paul Livingstone (also known as
+        <NuxtLink
+          to="https://github.com/theflyer1983"
+          external
+          class="underline"
+          >TheFlyer1983</NuxtLink
+        >)</span
+      >
     </div>
   </UApp>
 </template>

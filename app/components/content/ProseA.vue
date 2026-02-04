@@ -23,7 +23,11 @@ const props = defineProps({
 </script>
 
 <template>
-  <NuxtLink class="prose-a:text-decoration-none" :href="props.href" :target="props.target">
+  <NuxtLink
+    class="prose-a:text-decoration-none"
+    :href="props.href"
+    :target="props.target"
+  >
     <slot></slot>
   </NuxtLink>
 </template>

@@ -5,7 +5,23 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
-  modules: ['@nuxt/eslint', '@nuxt/hints', '@nuxt/ui', '@nuxt/test-utils'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@nuxt/test-utils',
+    '@nuxt/content',
+    'nuxt-studio'
+  ],
+
+  studio: {
+    route: '/admin',
+    repository: {
+      provider: 'github', // 'github' or 'gitlab'
+      owner: 'your-username',
+      repo: 'your-repo',
+      branch: 'main'
+    }
+  },
 
   css: ['./app/assets/css/main.css'],
 
@@ -14,6 +30,10 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true
+    },
     routeRules: {
       '/**': {
         headers: {

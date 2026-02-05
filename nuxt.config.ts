@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   ],
 
   studio: {
+    route: '/admin',
     repository: {
       provider: 'github', // 'github' or 'gitlab'
       owner: 'your-username',
@@ -29,6 +30,10 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true,
+    },
     routeRules: {
       '/**': {
         headers: {

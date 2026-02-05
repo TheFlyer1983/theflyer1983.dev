@@ -13,6 +13,9 @@ node_modules
 logs
 *.log
 
+# Dev Files/Folders
+.history/
+
 # Misc
 .DS_Store
 .fleet

@@ -2,10 +2,7 @@
   <div>
     <UApp>
       <UContainer>
-        <UHeader class="mb-4">
-          <template #title>
-            <NuxtLink to="/">theflyer1983.dev</NuxtLink>
-          </template>
+        <UHeader class="mb-4" to="/" title="theflyer1983.dev">
 
           <template #right>
             <UColorModeButton />

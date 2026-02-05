@@ -1,26 +1,29 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const { data } = await useAsyncData(
-  route.path,
-  () => queryCollection('content').path(route.path).first(),
-  { server: true }
-);
+const { data: page } = await useAsyncData('page-' + route.path, () => {
+  return queryCollection('content').path(route.path).first();
+});
 
-if (import.meta.server) {
-  useSeoMeta({
-    title: data.value?.title,
-    description: data.value?.description,
-    ogTitle: data.value?.title,
-    ogDescription: data.value?.description,
-    ogSiteName: 'theflyer1983.dev'
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
   });
 }
+
+useSeoMeta({
+  title: page.value.title,
+  description: page.value.description,
+  ogTitle: page.value.title,
+  ogDescription: page.value.description,
+  ogSiteName: 'theflyer1983.dev'
+});
 </script>
 
 <template>
   <div>
-    <ContentRenderer v-if="data" :value="data" />
-    <div v-else>Page not found</div>
+    <ContentRenderer v-if="page" :value="page" />
   </div>
 </template>

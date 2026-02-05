@@ -3,7 +3,6 @@
     <UApp>
       <UContainer>
         <UHeader class="mb-4" to="/" title="theflyer1983.dev">
-
           <template #right>
             <UColorModeButton />
 

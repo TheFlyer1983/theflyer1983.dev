@@ -1,6 +1,9 @@
 ---
 title: TheFlyer1983 - Senior Frontend Developer
 description: The personal website of theFlyer1983, a senior frontend developer specializing in Vue.js and Nuxt.js.
+robots: index, follow
+sitemapChangeFrequency: weekly
+sitemapPriority: '0.8'
 ---
 
 # Welcome to [theflyer1983.dev](http://theflyer1983.dev)

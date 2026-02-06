@@ -16,9 +16,13 @@ if (!page.value) {
 useSeoMeta({
   title: page.value.title,
   description: page.value.description,
+  robots: page.value.robots,
   ogTitle: page.value.title,
   ogDescription: page.value.description,
-  ogSiteName: 'theflyer1983.dev'
+  ogType: 'website',
+  ogSiteName: 'theflyer1983.dev',
+  ogUrl: 'https://theflyer1983.dev',
+  twitterCard: 'summary',
 });
 </script>
 

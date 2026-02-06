@@ -22,7 +22,7 @@ useSeoMeta({
   ogType: 'website',
   ogSiteName: 'theflyer1983.dev',
   ogUrl: 'https://theflyer1983.dev',
-  twitterCard: 'summary',
+  twitterCard: 'summary'
 });
 </script>
 

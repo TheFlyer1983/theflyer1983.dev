@@ -7,8 +7,8 @@ ogImage:
 robots: index, follow
 schemaOrg: {}
 seo:
-  title: TheFlyer1983 - Senior Frontend Developer
-  description: The personal website of theFlyer1983, a senior frontend developer specializing in Vue.js and Nuxt.js.
+  title: TheFlyer1983 - Frontend Developer
+  description: The personal website of theFlyer1983, a Frontend Developer specializing in Vue.js and Nuxt.js.
   robots: index, follow
 sitemap:
   loc: /

@@ -20,7 +20,7 @@ useSeoMeta({
   twitterCard: 'summary'
 });
 
-useHead(page.value.head as Record<string, unknown> || {});
+useHead((page.value.head as Record<string, unknown>) || {});
 </script>
 
 <template>

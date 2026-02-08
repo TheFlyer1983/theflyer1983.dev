@@ -5,13 +5,21 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  // Module order matters: @nuxtjs/seo (includes sitemap) must be before @nuxt/content
+  // so that asSitemapCollection and frontmatter sitemap/robots work correctly.
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/test-utils',
+    '@nuxtjs/seo',
     '@nuxt/content',
     'nuxt-studio'
   ],
+
+  site: {
+    url: process.env.NUXT_SITE_URL || 'https://theflyer1983.dev',
+    name: process.env.NUXT_SITE_NAME
+  },
 
   studio: {
     route: '/admin',
@@ -21,6 +29,10 @@ export default defineNuxtConfig({
       repo: 'your-repo',
       branch: 'main'
     }
+  },
+
+  sitemap: {
+    xsl: false
   },
 
   css: ['./app/assets/css/main.css'],

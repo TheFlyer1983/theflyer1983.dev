@@ -14,16 +14,13 @@ if (!page.value) {
 }
 
 useSeoMeta({
-  title: page.value.title,
-  description: page.value.description,
-  robots: page.value.robots,
-  ogTitle: page.value.title,
-  ogDescription: page.value.description,
+  ...page.value.seo,
   ogType: 'website',
   ogSiteName: 'theflyer1983.dev',
-  ogUrl: 'https://theflyer1983.dev',
   twitterCard: 'summary'
 });
+
+useHead((page.value.head as Record<string, unknown>) || {});
 </script>
 
 <template>

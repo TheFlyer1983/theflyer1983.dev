@@ -53,7 +53,7 @@ export default defineNuxtConfig({
 
   nitro: {
     externals: {
-      inline: ['unhead', '@unhead/']
+      inline: ['unhead', '@unhead/*']
     },
     routeRules: {
       '/**': {

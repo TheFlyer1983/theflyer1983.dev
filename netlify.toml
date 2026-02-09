@@ -1,0 +1,15 @@
+# netlify.toml
+[[redirects]]
+  from = "/wp-admin/*"
+  to = "/404.html"
+  status = 404!
+
+[[redirects]]
+  from = "/.env"
+  to = "/404.html"
+  status = 404!
+
+[[redirects]]
+  from = "/xmlrpc.php"
+  to = "/404.html"
+  status = 404!

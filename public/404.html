@@ -1,27 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 - Page not found | theflyer1983.dev</title>
-  <style>
-    *,:after,:before{border-color:var(--un-default-border-color,#e5e7eb);border-style:solid;border-width:0;box-sizing:border-box}:after,:before{--un-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}h1,h2{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}h1,h2,p{margin:0}
-    .grid{display:grid}.mb-2{margin-bottom:.5rem}.mb-4{margin-bottom:1rem}.max-w-520px{max-width:520px}.min-h-screen{min-height:100vh}.w-full{width:100%}.flex{display:flex}.place-content-center{place-content:center}.items-center{align-items:center}.justify-center{justify-content:center}.overflow-hidden{overflow:hidden}.bg-white{background-color:#fff}.px-2{padding-left:.5rem;padding-right:.5rem}.text-center{text-align:center}.text-80{font-size:80px}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-dark{color:#020420}.text-muted{color:#64748B}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-none{line-height:1}.tracking-wide{letter-spacing:.025em}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.tabular-nums{font-variant-numeric:tabular-nums}.underline{text-decoration-line:underline}.underline-offset-3{text-underline-offset:3px}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-    a:hover{color:#00DC82}
-    @media(prefers-color-scheme:dark){.bg-white{background-color:#020420}.text-dark{color:#fff}}
-    @media(min-width:640px){.text-80{font-size:110px}.text-2xl{font-size:1.875rem;line-height:2.25rem}}
-  </style>
-</head>
-<body>
-  <div class="antialiased bg-white text-dark font-sans grid min-h-screen overflow-hidden place-content-center tracking-wide">
-    <div class="max-w-520px text-center">
-      <h1 class="font-semibold leading-none mb-4 text-80 tabular-nums">404</h1>
-      <h2 class="font-semibold mb-2 text-2xl">Page not found</h2>
-      <p class="mb-4 px-2 text-muted text-sm">Sorry, the page you are looking for could not be found.</p>
-      <div class="flex items-center justify-center w-full">
-        <a href="/" class="font-medium text-sm underline underline-offset-3">Go back home</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Page not found | theflyer1983.dev</title>
+    <style>
+      *,
+      :after,
+      :before {
+        border-color: var(--un-default-border-color, #e5e7eb);
+        border-style: solid;
+        border-width: 0;
+        box-sizing: border-box;
+      }
+      :after,
+      :before {
+        --un-content: '';
+      }
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          Apple Color Emoji,
+          Segoe UI Emoji,
+          Segoe UI Symbol,
+          Noto Color Emoji;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        line-height: inherit;
+        margin: 0;
+      }
+      h1,
+      h2 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+      .grid {
+        display: grid;
+      }
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .max-w-520px {
+        max-width: 520px;
+      }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .flex {
+        display: flex;
+      }
+      .place-content-center {
+        place-content: center;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .bg-white {
+        background-color: #fff;
+      }
+      .px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-80 {
+        font-size: 80px;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-dark {
+        color: #020420;
+      }
+      .text-muted {
+        color: #64748b;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .leading-none {
+        line-height: 1;
+      }
+      .tracking-wide {
+        letter-spacing: 0.025em;
+      }
+      .font-sans {
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica Neue,
+          Arial,
+          Noto Sans,
+          sans-serif,
+          Apple Color Emoji,
+          Segoe UI Emoji,
+          Segoe UI Symbol,
+          Noto Color Emoji;
+      }
+      .tabular-nums {
+        font-variant-numeric: tabular-nums;
+      }
+      .underline {
+        text-decoration-line: underline;
+      }
+      .underline-offset-3 {
+        text-underline-offset: 3px;
+      }
+      .antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      a:hover {
+        color: #00dc82;
+      }
+      @media (prefers-color-scheme: dark) {
+        .bg-white {
+          background-color: #020420;
+        }
+        .text-dark {
+          color: #fff;
+        }
+      }
+      @media (min-width: 640px) {
+        .text-80 {
+          font-size: 110px;
+        }
+        .text-2xl {
+          font-size: 1.875rem;
+          line-height: 2.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="text-dark grid min-h-screen place-content-center overflow-hidden bg-white font-sans tracking-wide antialiased"
+    >
+      <div class="max-w-520px text-center">
+        <h1 class="text-80 mb-4 leading-none font-semibold tabular-nums">
+          404
+        </h1>
+        <h2 class="mb-2 text-2xl font-semibold">Page not found</h2>
+        <p class="text-muted mb-4 px-2 text-sm">
+          Sorry, the page you are looking for could not be found.
+        </p>
+        <div class="flex w-full items-center justify-center">
+          <a href="/" class="text-sm font-medium underline underline-offset-3"
+            >Go back home</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

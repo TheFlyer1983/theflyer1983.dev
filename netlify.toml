@@ -1,0 +1,20 @@
+# netlify.toml
+[[redirects]]
+  from = "/wp-*/*"
+  to = "/404.html"
+  status = 404!
+
+[[redirects]]
+  from = "/.env"
+  to = "/404.html"
+  status = 404!
+
+[[redirects]]
+  from = "/*.php"
+  to = "/404.html"
+  status = 404!
+
+[[redirects]]
+  from = "/.git/*"
+  to = "/404.html"
+  status = 404!

@@ -16,9 +16,15 @@ export default defineNuxtConfig({
     'nuxt-studio'
   ],
 
+  runtimeConfig: {
+    public: {
+      siteUrl: import.meta.env.NUXT_SITE_URL || 'https://theflyer1983.dev'
+    }
+  },
+
   site: {
-    url: process.env.NUXT_SITE_URL || 'https://theflyer1983.dev',
-    name: process.env.NUXT_SITE_NAME
+    url: import.meta.env.NUXT_SITE_URL || 'https://theflyer1983.dev',
+    name: import.meta.env.NUXT_SITE_NAME
   },
 
   studio: {
@@ -29,6 +35,10 @@ export default defineNuxtConfig({
       repo: 'your-repo',
       branch: 'main'
     }
+  },
+
+  ogImage: {
+    enabled: false
   },
 
   sitemap: {

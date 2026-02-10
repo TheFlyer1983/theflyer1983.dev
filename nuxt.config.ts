@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     route: '/admin',
     repository: {
       provider: 'github', // 'github' or 'gitlab'
-      owner: 'theflyer1983',
+      owner: 'TheFlyer1983',
       repo: 'theflyer1983.dev',
       branch: 'main'
     }

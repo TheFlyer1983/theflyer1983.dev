@@ -13,12 +13,28 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxtjs/seo',
     '@nuxt/content',
-    'nuxt-studio'
+    'nuxt-studio',
+    '@nuxt/scripts'
   ],
+
+  $production: {
+    scripts: {
+      registry: {
+        googleAnalytics: {
+          id: 'YOUR_ID'
+        }
+      }
+    }
+  },
 
   runtimeConfig: {
     public: {
-      siteUrl: import.meta.env.NUXT_SITE_URL || 'https://theflyer1983.dev'
+      siteUrl: import.meta.env.NUXT_SITE_URL || 'https://theflyer1983.dev',
+      scripts: {
+        googleAnalytics: {
+          id: import.meta.env.NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID
+        }
+      }
     }
   },
 

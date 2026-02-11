@@ -20,9 +20,7 @@ export default defineNuxtConfig({
   $production: {
     scripts: {
       registry: {
-        googleAnalytics: {
-          id: 'YOUR_ID'
-        }
+        googleAnalytics: true
       }
     }
   },

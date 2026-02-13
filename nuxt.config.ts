@@ -13,12 +13,12 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxtjs/seo',
     '@nuxt/content',
-    'nuxt-studio',
+    'nuxt-studio'
   ],
 
   runtimeConfig: {
     public: {
-      siteUrl: import.meta.env.NUXT_SITE_URL || 'https://theflyer1983.dev',
+      siteUrl: import.meta.env.NUXT_SITE_URL || 'https://theflyer1983.dev'
     }
   },
 
